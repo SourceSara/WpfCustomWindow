@@ -1,0 +1,54 @@
+﻿<controls:CustomWindow    
+    x:Class="CustomWindow.Demo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:CustomControls;assembly=CustomControls"
+    mc:Ignorable="d"
+    Title="SourceSara.Com"
+    Height="500" 
+    Width="700"
+    Background="#1B2738"
+    Foreground="#a0afc0"
+    ActiveTitleBarBackground="{Binding RelativeSource={RelativeSource Self}, Path=Background}"
+    InactiveTitleBarBackground="#182333"
+    WindowButtonMouseOverBackground="#323D4C"
+    WindowButtonMouseOverForeground="{Binding RelativeSource={RelativeSource Self}, Path=Foreground}"
+    TextElement.FontFamily="Roboto"
+    Icon="/Resources/Images/Chrome.png"
+    WindowStartupLocation="CenterScreen">
+    <Viewbox Margin="32">
+        <StackPanel>
+            <Viewbox
+                Width="240" 
+                Height="{Binding RelativeSource={RelativeSource Self}, Path=Width}">
+                <Canvas Width="48" Height="48">
+                    <Path Fill="#131B27" Data="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"/>
+                    <Path Fill="#182333" Data="M24,4v20l8,4l-8.843,16c0.317,0,0.526,0,0.843,0c11.053,0,20-8.947,20-20S35.053,4,24,4z"/>
+                    <Path Fill="#131B27" Data="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"/>
+                    <Path Fill="#131B27" Data="M24,4v20l8,4l-8.843,16c0.317,0,0.526,0,0.843,0c11.053,0,20-8.947,20-20S35.053,4,24,4z"/>
+                    <Path Fill="#131B27" Data="M41.84,15H24v13l-3-1L7.16,13.26H7.14C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z"/>
+                    <Path Fill="#182333" Data="M7.158,13.264l8.843,14.862L21,27L7.158,13.264z"/>
+                    <Path Fill="#182333" Data="M23.157,44l8.934-16.059L28,25L23.157,44z"/>
+                    <Path Fill="#182333" Data="M41.865,15H24l-1.579,4.58L41.865,15z"/>
+                    <Path Fill="#182333" Data="M33,24c0,4.969-4.031,9-9,9s-9-4.031-9-9s4.031-9,9-9S33,19.031,33,24z"/>
+                    <Path Fill="#131B27" Data="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"/>
+                </Canvas>
+            </Viewbox>
+
+            <TextBlock 
+                FontSize="34"
+                Margin="0,16"
+                TextAlignment="Center"
+                Foreground="#8ab4f8"
+                Text="WPF Custom Window TitleBar"/>
+
+            <controls:MadeByAmRo 
+                Margin="0,16"
+                Foreground="#a0afc0"
+                AmRoLogoBrush="#8ab4f8"
+                HeartBrush="#f28b82"/>
+        </StackPanel>
+    </Viewbox>
+</controls:CustomWindow>

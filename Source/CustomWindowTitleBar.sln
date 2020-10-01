@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomWindow.Demo", "CustomWindow.Demo\CustomWindow.Demo.csproj", "{E9C97084-731A-4545-98A7-7ADB4EE1E61E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls", "CustomControls\CustomControls.csproj", "{6AD7B5A9-D108-4BCD-AE80-A7A2F2F81595}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9C97084-731A-4545-98A7-7ADB4EE1E61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C97084-731A-4545-98A7-7ADB4EE1E61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C97084-731A-4545-98A7-7ADB4EE1E61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C97084-731A-4545-98A7-7ADB4EE1E61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD7B5A9-D108-4BCD-AE80-A7A2F2F81595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD7B5A9-D108-4BCD-AE80-A7A2F2F81595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD7B5A9-D108-4BCD-AE80-A7A2F2F81595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD7B5A9-D108-4BCD-AE80-A7A2F2F81595}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2D1782A-5FB1-4BE1-BAB5-453902C2E1A3}
+	EndGlobalSection
+EndGlobal

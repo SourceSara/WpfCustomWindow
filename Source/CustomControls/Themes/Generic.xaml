@@ -1,0 +1,8 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/CustomControls;component/Themes/CustomWindow.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/CustomControls;component/Themes/MadeByAmRo.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>
