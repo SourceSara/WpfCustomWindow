@@ -92,8 +92,8 @@ namespace CustomControls
             var monitorInfo = GetMonitorInfo();
             var x = monitorInfo.rcWork.left;
             var y = monitorInfo.rcWork.top;
-            var width = monitorInfo.rcWork.right;
-            var height = monitorInfo.rcWork.bottom;
+            var width = Math.Abs(monitorInfo.rcWork.right - monitorInfo.rcWork.left);
+            var height = Math.Abs(monitorInfo.rcWork.bottom - monitorInfo.rcWork.top);
 
             // NOTE:
             //  To adjust window position when auto-hide taskbar enabled. 
