@@ -3,56 +3,52 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:CustomControls"
     xmlns:system="clr-namespace:System;assembly=System.Runtime">
-
+    
     <!--#region Constants -->
     <system:Double x:Key="TitleBarHeight">24</system:Double>
     <system:Double x:Key="WindowButtonWidth">28</system:Double>
     <system:Double x:Key="WindowButtonHeight">24</system:Double>
     <system:Double x:Key="IconSize">20</system:Double>
-    <system:Double x:Key="TitleFontSize">13</system:Double>
+    <system:Double x:Key="TitleFontSize">14</system:Double>
     <!--#endregion-->
 
     <!--#region Window Buttons Content Templates-->
     <DataTemplate x:Key="CloseButtonIcon">
-        <Viewbox Stretch="Uniform">
+        <Viewbox>
             <Canvas Width="2048" Height="2048">
-                <Path Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
-                      Data="M1718.1,1534.2c18.9,18.9,18.9,49.6,0,68.5l-115.4,115.4c-18.9,18.9-49.6,18.9-68.5,0L1024,1207.8l-510.2,510.2
-	c-18.9,18.9-49.6,18.9-68.5,0l-115.4-115.4c-18.9-18.9-18.9-49.6,0-68.5L840.2,1024L329.9,513.8c-18.9-18.9-18.9-49.6,0-68.5
-	l115.4-115.4c18.9-18.9,49.6-18.9,68.5,0L1024,840.2l510.2-510.2c18.9-18.9,49.6-18.9,68.5,0l115.4,115.4
-	c18.9,18.9,18.9,49.6,0,68.5L1207.8,1024L1718.1,1534.2z"/>
+                <Path 
+                    Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
+                    Data="M1718.1,1534.2c18.9,18.9,18.9,49.6,0,68.5l-115.4,115.4c-18.9,18.9-49.6,18.9-68.5,0L1024,1207.8l-510.2,510.2c-18.9,18.9-49.6,18.9-68.5,0l-115.4-115.4c-18.9-18.9-18.9-49.6,0-68.5L840.2,1024L329.9,513.8c-18.9-18.9-18.9-49.6,0-68.5l115.4-115.4c18.9-18.9,49.6-18.9,68.5,0L1024,840.2l510.2-510.2c18.9-18.9,49.6-18.9,68.5,0l115.4,115.4c18.9,18.9,18.9,49.6,0,68.5L1207.8,1024L1718.1,1534.2z"/>
             </Canvas>
         </Viewbox>
     </DataTemplate>
 
     <DataTemplate x:Key="MinimizeButtonIcon">
-        <Viewbox Stretch="Uniform">
+        <Viewbox>
             <Canvas Width="2048" Height="2048">
-                <Path Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
-                      Data="M1924,1569.3v-163.1c0-26.7-21.7-48.4-48.4-48.4H172.4c-26.7,0-48.4,21.7-48.4,48.4v163.1c0,26.7,21.7,48.4,48.4,48.4
-	h1703.1C1902.3,1617.7,1924,1596.1,1924,1569.3z"/>
+                <Path 
+                    Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
+                    Data="M1924,1569.3v-163.1c0-26.7-21.7-48.4-48.4-48.4H172.4c-26.7,0-48.4,21.7-48.4,48.4v163.1c0,26.7,21.7,48.4,48.4,48.4h1703.1C1902.3,1617.7,1924,1596.1,1924,1569.3z"/>
             </Canvas>
         </Viewbox>
     </DataTemplate>
 
     <DataTemplate x:Key="MaximizeButtonIcon">
-        <Viewbox Stretch="Uniform">
+        <Viewbox>
             <Canvas Width="2048" Height="2048">
-                <Path Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
-                      Data="M1520.5,527.5v993h-993v-993H1520.5 M1768.81,227.5H279.19c-28.55,0-51.69,23.14-51.69,51.69v1489.62
-		c0,28.55,23.14,51.69,51.69,51.69h1489.62c28.55,0,51.69-23.14,51.69-51.69V279.19C1820.5,250.64,1797.36,227.5,1768.81,227.5
-		L1768.81,227.5z"/>
+                <Path 
+                    Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
+                    Data="M1520.5,527.5v993h-993v-993H1520.5 M1768.81,227.5H279.19c-28.55,0-51.69,23.14-51.69,51.69v1489.62c0,28.55,23.14,51.69,51.69,51.69h1489.62c28.55,0,51.69-23.14,51.69-51.69V279.19C1820.5,250.64,1797.36,227.5,1768.81,227.5L1768.81,227.5z"/>
             </Canvas>
         </Viewbox>
     </DataTemplate>
 
     <DataTemplate x:Key="RestoreButtonIcon">
-        <Viewbox Stretch="Uniform">
+        <Viewbox>
             <Canvas Width="2048" Height="2048">
-                <Path Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
-                      Data="M1314.4,729.9v993h-993v-993H1314.4 M1562.8,429.9H73.1c-28.6,0-51.7,23.1-51.7,51.7v1489.6c0,28.6,23.1,51.7,51.7,51.7
-	h1489.6c28.6,0,51.7-23.1,51.7-51.7V481.6C1614.4,453.1,1591.3,429.9,1562.8,429.9L1562.8,429.9z M1986.3,14H496.7
-	C468.1,14,445,37.1,445,65.7V314h300h993v993v300h248.3c28.6,0,51.7-23.1,51.7-51.7V65.7C2038,37.1,2014.9,14,1986.3,14z"/>
+                <Path 
+                    Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=Button}}"
+                    Data="M1314.4,729.9v993h-993v-993H1314.4 M1562.8,429.9H73.1c-28.6,0-51.7,23.1-51.7,51.7v1489.6c0,28.6,23.1,51.7,51.7,51.7h1489.6c28.6,0,51.7-23.1,51.7-51.7V481.6C1614.4,453.1,1591.3,429.9,1562.8,429.9L1562.8,429.9z M1986.3,14H496.7C468.1,14,445,37.1,445,65.7V314h300h993v993v300h248.3c28.6,0,51.7-23.1,51.7-51.7V65.7C2038,37.1,2014.9,14,1986.3,14z"/>
             </Canvas>
         </Viewbox>
     </DataTemplate>
@@ -61,13 +57,13 @@
     <!--#region Window Buttons Styles-->
     <Style x:Key="WindowButton" TargetType="{x:Type Button}">
         <Setter Property="UseLayoutRounding" Value="True"/>
-        <Setter Property="Width" Value="{StaticResource WindowButtonWidth}" />
-        <Setter Property="Height" Value="{StaticResource WindowButtonHeight}" />
-        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Foreground}" />
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="BorderBrush" Value="Transparent" />
-        <Setter Property="BorderThickness" Value="0" />
-        <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
+        <Setter Property="Width" Value="{StaticResource WindowButtonWidth}"/>
+        <Setter Property="Height" Value="{StaticResource WindowButtonHeight}"/>
+        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:CustomWindow.ButtonForeground)}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -86,17 +82,15 @@
                             Margin="{TemplateBinding Padding}"
                             RenderOptions.ClearTypeHint="Auto"
                             TextOptions.TextRenderingMode="Auto"
-                            TextOptions.TextFormattingMode="Display"
-                            Opacity="0.24"/>
+                            TextOptions.TextFormattingMode="Display"/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Opacity" TargetName="ContainerBorder" Value="0.42"/>
+                            <Setter TargetName="ContainerBorder" Property="Opacity" Value="0.42"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Opacity" TargetName="ContentPresenter" Value="0.8"/>
-                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=WindowButtonMouseOverBackground}"/>
-                            <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=WindowButtonMouseOverForeground}"/>
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:CustomWindow.ButtonMouseOverBackground)}"/>
+                            <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:CustomWindow.ButtonMouseOverForeground)}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -107,7 +101,7 @@
     <Style x:Key="CloseButtonStyle" BasedOn="{StaticResource WindowButton}" TargetType="{x:Type Button}">
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#D53826"/>
+                <Setter Property="Background" Value="#E92539"/>
                 <Setter Property="Foreground" Value="#ffffff"/>
             </Trigger>
         </Style.Triggers>
@@ -117,8 +111,11 @@
     <!--#region Window Chrome-->
     <WindowChrome
         x:Key="CustomWindowChrome"
-        ResizeBorderThickness="{Binding Source={x:Static SystemParameters.WindowResizeBorderThickness}}"
-        UseAeroCaptionButtons="False"        
+        CornerRadius="0"
+        UseAeroCaptionButtons="False" 
+        ResizeBorderThickness="3.2,3.2,3.2,3.2"
+        GlassFrameThickness="0,0,0,1"
+        NonClientFrameEdges="Bottom"
         CaptionHeight="{StaticResource TitleBarHeight}"/>
     <!--#endregion-->
 
@@ -129,7 +126,8 @@
             KeyboardNavigation.TabNavigation="None"
             KeyboardNavigation.DirectionalNavigation="None"
             TextElement.Foreground="{TemplateBinding Foreground}"
-            Background="{TemplateBinding BorderBrush}">
+            Background="{TemplateBinding BorderBrush}"
+            UseLayoutRounding="{TemplateBinding UseLayoutRounding}">
             <Grid>
                 <!--Window Content-->
                 <Border 
@@ -148,41 +146,20 @@
                     VerticalAlignment="Top"
                     Height="{StaticResource TitleBarHeight}"
                     Fill="{TemplateBinding ActiveTitleBarBackground}"/>
-
                 <Grid 
                     x:Name="PART_TitleBarContainerGrid"
                     VerticalAlignment="Top"
                     Height="{StaticResource TitleBarHeight}">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-
-                    <!--Icon-->
-                    <Image
-                        x:Name="PART_IconImage"
-                        Grid.Column="0"
-                        Margin="4, 0, 0, 0"
-                        Stretch="Uniform"
-                        VerticalAlignment="Center"
-                        Width="{StaticResource IconSize}"
-                        Height="{StaticResource IconSize}"
-                        Source="{TemplateBinding Icon}"/>
-
-                    <!--Title-->
-                    <TextBlock
-                        x:Name="PART_TitleTextBlock"
-                        Grid.Column="1"
-                        Margin="4, 0, 0, 0"
-                        TextAlignment="Left"
-                        VerticalAlignment="Center"
-                        FontSize="{StaticResource TitleFontSize}"
-                        Text="{TemplateBinding Title}"/>
 
                     <!--Buttons-->
                     <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal">
-                        <Button Name="PART_WindowMinimizeButton" Style="{StaticResource WindowButton}">
+                        <Button 
+                            Style="{StaticResource WindowButton}"
+                            Command="{x:Static local:CustomWindow.MinimizeCommand}">
                             <Button.ContentTemplate>
                                 <DataTemplate>
                                     <ContentControl 
@@ -193,7 +170,9 @@
                             </Button.ContentTemplate>
                         </Button>
 
-                        <Button Name="PART_WindowMaximizeButton">
+                        <Button 
+                            Name="WindowMaximizeButton"
+                            Command="{x:Static local:CustomWindow.MaximizeCommand}">
                             <Button.Style>
                                 <Style TargetType="{x:Type Button}" BasedOn="{StaticResource WindowButton}">
                                     <Setter Property="ContentTemplate">
@@ -225,8 +204,8 @@
                         </Button>
 
                         <Button 
-                            Name="PART_WindowCloseButton" 
-                            Style="{StaticResource CloseButtonStyle}">
+                            Style="{StaticResource CloseButtonStyle}"
+                            Command="{x:Static local:CustomWindow.CloseCommand}">
                             <Button.ContentTemplate>
                                 <DataTemplate>
                                     <ContentControl 
@@ -250,21 +229,21 @@
             </Trigger>
 
             <Trigger Property="ResizeMode" Value="NoResize">
-                <Setter TargetName="PART_WindowMaximizeButton" Property="Visibility" Value="Collapsed"/>
+                <Setter TargetName="WindowMaximizeButton" Property="Visibility" Value="Collapsed"/>
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
     <!--#endregion-->
 
     <Style TargetType="{x:Type local:CustomWindow}">
-        <Setter Property="Background" Value="#ffffff" />
-        <Setter Property="Foreground" Value="#444444" />
-        <Setter Property="ActiveTitleBarBackground" Value="#fafafa" />
-        <Setter Property="InactiveTitleBarBackground" Value="#f0f0f0" />
-        <Setter Property="WindowButtonMouseOverBackground" Value="#f5f5f5" />
-        <Setter Property="WindowButtonMouseOverForeground" Value="#888888" />
         <Setter Property="UseLayoutRounding" Value="True"/>
-        <Setter Property="WindowChrome.WindowChrome" Value="{StaticResource CustomWindowChrome}" />
+        <Setter Property="Background" Value="#ffffff"/>
+        <Setter Property="Foreground" Value="#444444"/>
+        <Setter Property="ActiveTitleBarBackground" Value="#fafafa"/>
+        <Setter Property="ButtonMouseOverBackground" Value="#f5f5f5"/>
+        <Setter Property="ButtonMouseOverForeground" Value="#888888"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="WindowChrome.WindowChrome" Value="{StaticResource CustomWindowChrome}"/>
         <Setter Property="Template" Value="{StaticResource CustomWindowTemplate}"/>
     </Style>
 
