@@ -151,9 +151,31 @@
                     VerticalAlignment="Top"
                     Height="{StaticResource TitleBarHeight}">
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
+                    
+                    <!--Icon-->
+                    <Image
+                        x:Name="PART_IconImage"
+                        Grid.Column="0"
+                        Margin="4,0,0,0"
+                        Stretch="Uniform"
+                        VerticalAlignment="Center"
+                        Width="{StaticResource IconSize}"
+                        Height="{StaticResource IconSize}"
+                        Source="{TemplateBinding Icon}"/>
+
+                    <!--Title-->
+                    <TextBlock
+                        x:Name="PART_TitleTextBlock"
+                        Grid.Column="1"
+                        Margin="4,0,0,0"
+                        TextAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontSize="{StaticResource TitleFontSize}"
+                        Text="{TemplateBinding Title}"/>
 
                     <!--Buttons-->
                     <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal">
