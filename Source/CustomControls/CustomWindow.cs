@@ -69,12 +69,6 @@ namespace CustomControls
 
         #endregion
 
-        #region Properties
-
-        public FrameworkElement TemplateContainer => GetTemplateChild(TemplateContainerName) as Border;
-
-        #endregion
-
         #region Overrides
 
         public override void OnApplyTemplate()
